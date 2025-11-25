@@ -22,39 +22,46 @@ if(app_mode=="Home"):
     image_path = "home_page.jpeg"
     st.image(image_path,use_column_width=True)
     st.markdown("""
-    Welcome to the Plant Disease Recognition System! 🌿🔍
+    Welcome! Our advanced platform is dedicated to the swift and effective identification of plant diseases. By analyzing uploaded plant images, we aim to safeguard your crops and contribute to a successful, healthy harvest.
     
-    Our mission is to help in identifying plant diseases efficiently. Upload an image of a plant, and our system will analyze it to detect any signs of diseases. Together, let's protect our crops and ensure a healthier harvest!
-
-    ### How It Works
-    1. **Upload Image:** Go to the **Disease Recognition** page and upload an image of a plant with suspected diseases.
-    2. **Analysis:** Our system will process the image using advanced algorithms to identify potential diseases.
-    3. **Results:** View the results and recommendations for further action.
-
-    ### Why Choose Us?
-    - **Accuracy:** Our system utilizes state-of-the-art machine learning techniques for accurate disease detection.
-    - **User-Friendly:** Simple and intuitive interface for seamless user experience.
-    - **Fast and Efficient:** Receive results in seconds, allowing for quick decision-making.
-
-    ### Get Started
-    Click on the **Disease Recognition** page in the sidebar to upload an image and experience the power of our Plant Disease Recognition System!
-
-    ### About Us
-    Learn more about the project, our team, and our goals on the **About** page.
+    📋 Simple Steps for Diagnosis
+    Image Submission: Navigate to the Disease Recognition page and upload a photograph of the ailing plant or leaf.
+    
+    AI Assessment: Our system instantly processes the image using cutting-edge algorithms to pinpoint potential disease identifiers.
+    
+    Actionable Results: Review the comprehensive diagnosis and receive tailored recommendations for immediate intervention.
+    
+    ✅ Our Commitment to Excellence
+    Pioneering Accuracy: We employ state-of-the-art machine learning (ML) models for reliable and precise disease detection.
+    
+    Intuitive Design: The system features a simple, user-friendly interface for an efficient diagnostic experience.
+    
+    Rapid Feedback: Get results in moments, enabling timely and informed decision-making.
+    
+    🚀 Begin Your Analysis
+    To upload an image and leverage the diagnostic capabilities of our Plant Disease Recognition System, please click the Disease Recognition link in the sidebar.
+    
+    ℹ️ Find Out More
+    For details regarding our mission, technology, and the development team, explore the About page.
     """)
 
 #About Project
 elif(app_mode=="About"):
     st.header("About")
     st.markdown("""
-                #### About Dataset
-                This dataset is recreated using offline augmentation from the original dataset.The original dataset can be found on this github repo.
-                This dataset consists of about 87K rgb images of healthy and diseased crop leaves which is categorized into 38 different classes.The total dataset is divided into 80/20 ratio of training and validation set preserving the directory structure.
-                A new directory containing 33 test images is created later for prediction purpose.
-                #### Content
-                1. train (70295 images)
-                2. test (33 images)
-                3. validation (17572 images)
+                #### About The Dataset
+        This dataset was recreated using offline augmentation from an original dataset. The original dataset can be found on this github repository.
+
+        This dataset consists of about 87,000 RGB images of healthy and diseased crop leaves, categorized into 38 different classes. The total dataset is divided into an 80/20 ratio for training and validation sets, while preserving the directory structure.
+        
+        A new directory containing 33 test images was created later for prediction purposes.
+        
+        Content Breakdown
+        Training Set: 70,295 images
+        
+        Test Set: 33 images
+        
+        Validation Set: 17,572 images
 
                 """)
 
